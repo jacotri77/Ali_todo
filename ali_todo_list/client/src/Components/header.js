@@ -1,17 +1,17 @@
-import React from 'react';
-import '../../assets/styles/index.css';
-
-const Header = React.createClass({
+import React, { Component } from 'react'
 
 
+class Header extends Component {
 
-render: function(){
+
+
+render(){
   return (
       
-      <h1> Ali's List </h1>
+      <h1> Ali's ToDo List </h1>
       
     )
   }
 
-})
-	export default Header;
+}
+	export default Header

@@ -12,3 +12,23 @@ socket.on('newMessage', function(message){
         message
     })
 })
+
+export function addTodo (text) {
+
+	 store.dispatch( {
+
+		type: 'ADD_TODO',
+
+    	text
+	})
+}
+
+export function removeTodo (text) {
+
+	store.dispatch( {
+
+		type: 'REMOVE_TODO',
+
+		text
+	})
+}
